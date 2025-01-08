@@ -18,14 +18,15 @@ namespace ShapesLibrary
             _sideA = a;
             _sideB = b;
             _sideC = c;
-        }
-
-        public double GetArea()
-        {
+           
             if (IsNotTriangle())
             {
                 throw new ArgumentException("Invalid Triangel sides. Non-existing Triangle");
             }
+        }
+
+        public double GetArea()
+        {
             double s = (_sideA + _sideB + _sideC) / 2;
             return Math.Sqrt(s * (s - _sideA) * (s - _sideB) * (s - _sideC)); // using Heron's formula
         }

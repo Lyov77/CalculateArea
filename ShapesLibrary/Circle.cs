@@ -18,7 +18,7 @@ namespace ShapesLibrary
         public double GetArea()
         {
             // area == Pi * r * r
-            return _radius * _radius; // 25Pi look better than 78.5398....
+            return Math.PI * _radius * _radius;
         }
     }
 }
